@@ -33,13 +33,13 @@ gulp.task('watch', function() {
 });
  
 gulp.task('html', function() {
-    return gulp.src("src/*.html)")
+    return gulp.src("src/*.html")
         .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest("dist"));
 });
  
 gulp.task('scripts', function() {
-    return gulp.src("src/js/**/*.js)")
+    return gulp.src("src/js/**/*.js")
         .pipe(gulp.dest("dist/js"));
 });
  
